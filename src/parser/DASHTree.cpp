@@ -429,6 +429,8 @@ void adaptive::CDashTree::ParseTagAdaptationSet(pugi::xml_node nodeAdp, PLAYLIST
         contentType = "text";
       else if (value == "forced") // ISA custom attribute
         adpSet->SetIsForced(true);
+      else if (value == "forced-subtitle")
+        adpSet->SetIsForced(true);
       else if (value == "main")
         adpSet->SetIsDefault(true);
       else if (value == "caption" || value == "alternate" || value == "commentary")
